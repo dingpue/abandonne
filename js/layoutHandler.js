@@ -1,6 +1,6 @@
 function layoutHandler() {
     var styleLink = document.getElementById("pagestyle");
-    if(window.innerWidth < 950) {
+    if(window.innerWidth < 950 || screen.width < 700) {
       // styleLink.setAttribute("href", "mobile.css");
       document.location= "mobile.html";
     } else {
