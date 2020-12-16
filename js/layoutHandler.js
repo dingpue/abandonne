@@ -1,3 +1,7 @@
+if (screen.width <= 700){
+  document.location= "mobile.html";
+} 
+
 function layoutHandler() {
     var styleLink = document.getElementById("pagestyle");
     if(window.innerWidth < 950 || screen.width < 700) {
