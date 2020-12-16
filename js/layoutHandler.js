@@ -6,7 +6,7 @@ function layoutHandler() {
     var styleLink = document.getElementById("pagestyle");
     if(window.innerWidth < 950) {
       // styleLink.setAttribute("href", "mobile.css");
-      alert("윈도우 크기를 넓히고 감상해주십시오.");
+      alert("윈도우 크기를 넓히고 감상해주.");
     } else {
       styleLink.setAttribute("href", "desktop.css");
     }
