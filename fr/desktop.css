@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+}
+
+/* navigator */
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    height: 45px;
+    z-index: 2;
+    border-bottom: 1px solid gainsboro;
+    opacity: 100%;
+}
+
+.logo {
+    font-size: 24.5px;
+    color: black;
+    font-family: 'Mansalva', cursive; 
+}
+
+.nav-left {
+    width: 100px;
+    margin-left: 25px;
+}
+
+.nav-right {
+    width: 126px;
+    margin-right: 25px;
+    text-align: right;
+}
+
+.nav-intro {
+    font-family: 'Mansalva', cursive; 
+}
+
+.nav-way{
+    font-family: 'Mansalva', cursive; 
+    display: inline-block;
+}
+
+.nav-lang{
+    display: inline-block;
+    margin-right: 12px; 
+    font-family: 'Nanum Gothic', sans-serif; 
+}
+
+.nav-shop {
+    display: inline-block;
+    margin-right: 11px; 
+    font-family: 'Mansalva', cursive; 
+    font-weight: 300;
+}
+
+.logo a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-intro a{
+    font-size: 16.5px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-way a{
+    font-size: 16.5px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-lang a{
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-shop a{
+    font-size: 16.5px;
+    color: #9cb29e;
+    text-decoration: none;
+    /* text-decoration: underline double #9cb29e; */
+}
+
+.burger {
+    display: none;
+} 
+
+.burger div{
+    width: 20px;
+    height: 1px;
+    background-color: #0f261f;
+    margin: 3px;
+}
+
+#nav-void {
+    position: relative;
+    height: 45px;
+}
+
+.content {
+    width: 100%;
+    height: -webkit-calc(100vh - 45px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: white;;
+}
+/* image */
+.images {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    padding: 10px;
+    /* margin-right: 10px; */
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+
+.image-box-not-end {
+    position: relative;
+    max-height: -webkit-calc(100vh - 65px);
+    margin-right: 6px;
+}
+.image-box-end {
+    position: relative;
+    max-height: -webkit-calc(100vh - 65px);
+    margin-right: 10px;
+}
+
+.image {
+    max-width: 75vw;
+    max-height: -webkit-calc(100vh - 65px);
+    margin-right: 0px;
+    pointer-events: none;
+}
+
+.explanation {
+    /* display: inline-block; */
+    font-size:13px;
+    font-family: 'Nanum Gothic', sans-serif;
+    /* font-family: 'Noto Serif KR', 'serif'; */
+    color: #737373;
+    display: block;
+    line-height: 1.35;
+}
+
+.about-text {
+    /* position: absolute; */
+    display: block;
+    margin-left: 23px;
+    margin-right: 10px;
+    width: 17vw;
+    font-size: 13px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #829683;
+    /* color: #9cb29e; */
+    line-height: 1.3;
+    /* font-weight: bold; */
+}
+
+.contact-text {
+    margin-top: 17vh;
+    margin-left: 24vw;
+    display: block;
+    font-size: 13px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #829683;
+    /* color: #9cb29e; */
+    line-height: 1.3;
+    width: 540px;
+}
+
+
+.frame-icon-box {
+    /* position: relative;
+    top: -280px;
+    left: 14px; */
+    position: absolute;
+    top: 24px;
+    right: -36px;
+}
+
+.frame-icon {
+    width: 22px;
+    transition: opacity 0.08s;
+}
+
+.frame-icon:hover {
+    opacity: 0.5;
+}
+
+
+
+/* bullets */
+.bullets {
+    justify-content: space-between;
+    position: absolute;
+    bottom: 6px;
+    right: 10px;
+    font-size:20px;
+    transition: opacity 0.2s;
+}
+
+.bullets li{
+    list-style: none;
+    display: inline-block;
+}
+
+#prev, #next {
+    /* display: none; */
+    text-decoration: none;
+    color: black;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+  }
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-right: 12px solid gainsboro;
+    border-bottom: 6px solid transparent;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-left: 12px solid gainsboro;
+    border-bottom: 6px solid transparent;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+/* footer */
+footer {
+    height: 100px;
+    width: -webkit-calc(100vw - 16px);
+    /* background-color: black;   */
+    opacity: 100%;
+    color: black;
+    padding: 25px;
+    display: flex;
+    border-top: 1px solid #9cb29e;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 13.5px;
+    font-family: 'Noto Serif KR', serif;
+    color: black;
+    padding-top: 30px;
+}
+
+h2 {
+    width: 40px; 
+    text-align: center; 
+    border-bottom: 1px solid gainsboro; 
+    line-height: 0.1em;
+    margin-bottom: 32px; 
+ } 
+ 
+
+span.footer-latin {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #6d7e6e;
+    font-weight: 100;
+}
+
+.footer-city {
+    /* background-color: red; */
+    margin-right: 14px;
+}
+
+.footer-city a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-regions {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    width: 54%;
+    padding: 0px 14px;
+}
+
+.footer-regions li{
+    list-style: none;
+}
+
+.footer-regions a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 940px) {
+    .footer-regions {
+        width: 70%;
+    }
+}
+
+/* transition */
+
+.slide-in {
+    animation: slide-in 1s ease forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+        visibility: visible;
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+#overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 2;
+    cursor: pointer;
+    animation: fade-in 1s ease forwards;
+    flex-direction: column;
+  }
+
+.image-encadre {
+    display: block;
+    margin: auto;
+    max-width: 86vw;
+    max-height: 140vh;
+    padding: 35px;
+}
+
+
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #8ab18d;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 7px;
+    z-index: 1;
+    position: absolute;
+    top: -12vh;
+    left: 230px;
+    /* margin-left: 150px; */
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #737373;
+    font-size: 9px;
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 0.7s;
+  }
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.95;
+  }
+
+.tooltip-image {
+    max-width: 270px;
+    /* max-height: 80vh; */
+    /* margin: 6px; */
+}
+
+.date {
+    font-size:11px;
+    display: inline;
+}
+
+/* map */
+.map-button {
+    position: relative;
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 4px;
+}
+
+.pin-image {
+    width: 11px; 
+    opacity: 0.75;
+    position: relative;
+    /* margin-left: 2px; */
+    top: 4px;
+}
+
+.map-button:hover {
+    opacity: 0.5;
+}
+
+.pin-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.pin-tooltip .tooltipmap {
+    visibility: hidden;
+    color: #fff;
+    padding: 7px;
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    top: -100px;
+    left: 28px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #737373;
+    /* align-items: center;
+    display: flex; */
+    font-size: 9px;
+    width: 400px;
+    height: 300px;
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac:
+    opacity: 0;
+    transition: opacity 0.7s; */
+  }
+
+.pin-tooltip.active .tooltipmap{
+    visibility: visible;
+}
+
+
+#lat, #lng, #clat, #clng, #zoom, #cS {
+    display: none;
+}
+
+
+#my-store-45905004 {
+    font-family: 'Noto Serif KR';
+}
+
+#shop-text {
+    text-align: center;
+}
