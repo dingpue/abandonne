@@ -489,3 +489,33 @@ span.footer-latin {
 #shop-text {
     text-align: center;
 }
+
+/* gallery */
+div.gallery {
+    margin-left: 24px;
+    /* border: 1px solid #ccc; */
+    float: left;
+    width: 140px;
+    height: 300px;
+    position: relative;
+  }
+  
+  div.gallery:hover {
+    /* border: 1px solid #777; */
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 40px;
+  }
+  
+  div.desc {
+    padding: 7px;
+    font-family: 'Noto Sans JP', 'sans-serif';
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 58px;
+  }
