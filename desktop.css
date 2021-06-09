@@ -498,24 +498,24 @@ div.gallery {
     width: 140px;
     height: 300px;
     position: relative;
-  }
+}
   
-  div.gallery:hover {
+div.gallery:hover {
     /* border: 1px solid #777; */
-  }
+}
   
-  div.gallery img {
+div.gallery img {
     width: 100%;
     height: auto;
     position: absolute;
     bottom: 40px;
-  }
+}
   
-  div.desc {
+div.desc {
     padding: 7px;
     font-family: 'Noto Sans JP', 'sans-serif';
     font-size: 12px;
     position: absolute;
     bottom: 0;
     left: 58px;
-  }
+}
