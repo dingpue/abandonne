@@ -493,6 +493,7 @@ span.footer-latin {
 /* gallery */
 div.gallery {
     margin-left: 24px;
+    margin-bottom: 10px;
     /* border: 1px solid #ccc; */
     float: left;
     width: 140px;
