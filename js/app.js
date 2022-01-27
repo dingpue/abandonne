@@ -61,9 +61,9 @@ var Homepage = Barba.BaseView.extend({
   script1.src = '/js/map.js';
 
   if ( document.documentElement.lang.toLowerCase() === "fr" || document.documentElement.lang.toLowerCase() === "en") {
-     script2.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCFPZtyZJoAJtnYcwXmVePsWHh-O2lyBwE&region=FR&language=fr&callback=myMap';
+     script2.src = '';
   } else if ( document.documentElement.lang.toLowerCase() === "kr" ) {
-     script2.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCFPZtyZJoAJtnYcwXmVePsWHh-O2lyBwE&region=KO&language=ko&callback=myMap';
+     script2.src = '';
   }
   document.getElementsByClassName('barba-container')[0].appendChild(script1);  //map button
   document.getElementsByClassName('barba-container')[0].appendChild(script2);  //api
