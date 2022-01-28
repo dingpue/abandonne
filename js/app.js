@@ -10,6 +10,8 @@
 // navSlide();
 
 
+var mapFrKey = config.MAP_FR_KEY;
+var mapKoKey = config.MAP_KO_KEY;
 
 
 var Homepage = Barba.BaseView.extend({
@@ -61,9 +63,9 @@ var Homepage = Barba.BaseView.extend({
   script1.src = '/js/map.js';
 
   if ( document.documentElement.lang.toLowerCase() === "fr" || document.documentElement.lang.toLowerCase() === "en") {
-     script2.src = '';
+     script2.src = mapFrKey;
   } else if ( document.documentElement.lang.toLowerCase() === "kr" ) {
-     script2.src = '';
+     script2.src = mapKoKey;
   }
   document.getElementsByClassName('barba-container')[0].appendChild(script1);  //map button
   document.getElementsByClassName('barba-container')[0].appendChild(script2);  //api
