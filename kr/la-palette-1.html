@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HWWNGB65K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'G-7HWWNGB65K');
+    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+
+  <title>파리 I ・ 3 ・ 버려진 사진관</title>
+
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link id="pagestyle" rel="stylesheet" href="desktop.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <div class="burger" onclick="burger(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div id="myLinks">
+          <a class="nav-intro" href="about.html">소개</a>
+          <a class="nav-way" href="contact.html">구독</a>
+        </div>
+      </div>
+      <div class="nav-intro-desktop"><a href="about.html">소개</a></div>
+    </div>
+    <div class="logo"><a href="index.html">버려진 사진관</a></div>
+    <div class="nav-right">
+      <div class="nav-lang"><a href="/fr/index.html" id="lang-fr">fr</a></div>
+      <div class="nav-lang"><a href="/en/index.html" id="lang-en">en</a></div>
+      <!--  <div class="nav-shop"><a href="shop.html">Shop</a></div> -->
+      <div class="nav-way-desktop"><a href="contact.html">구독</a></div> 
+    </div>
+  </nav>
+  <div id="nav-void"></div>
+  <div id="barba-wrapper">
+  <div class="barba-container" data-namespace="homepage">
+  <div class="content">
+    <div class="images">
+      <div class="image-box-not-end"><img class="image" id="img-lapalette-1" src="/images/la-palette_2.jpg" alt="val de marne 1"></div>
+      <div class="image-box-end"><img class="image" id="img-lapalette-2" src="/images/la-palette_11.jpg" alt="val de marne 1">
+        <div class="frame-icon-box" >
+        <img class="frame-icon" src="/images/frame-icon.png" alt="frame" onclick="on()">
+        </div>
+      </div>
+      <div class="explanation" id="text-lapalette">
+        <p>내가 파리에서 유학한 지 1년이 되었을 때, 친오빠도 같은 이유로 이곳에 왔다. 의도하지 않은 우연이었다. <br>
+          어느 날 우리는 밤 늦게 산책을 하러 파리 시내로 나갔다. 11시가 되면 지하철을 타고 각자의 집으로 돌아갈 생각이었지만, 우리는 더 머무르기로 했다. 담배를 피고 있는 주방장에 눈길이 끌려 바 Bar 에 들어갔다. 
+          우리에게는 비쌌던, 와인 한 병을 시키고 이야기를 나눴다. 우리가 만난 사람들, 우리에게 일어나고 있는 일들... <br>바는 마감을 준비했다. 노오란 불빛이 마치 별인 듯 불인 듯 따뜻하게 느껴졌다. 어떤 웨이터가 눈에 띄었다. 담배를 피우고, 몸을 움직이며 정리를 하는 모습이 매력적인, 그는 춤을 추는 것 같았다. 
+          <br><br><div class="date">2018. 11. 19 <br>자정이 넘은 밤 La Palette에서</div>
+          <div class="map-button"><img class="pin-image" src="/images/pin-icon2.png" alt="pin-icon"></div>
+          <div class="pin-tooltip">
+            <div class="tooltipmap" id="tooltipmap-lapalette"></div>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <ul class="bullets">
+    <li><a id="prev" href="val-de-marne-2.html"><div class="triangle-left"></div><div class="dot" style="background: #b1be43"></div></a></li>
+    <li><span class="dot" style="background: #bc511b;"></span></li>
+    <li><a id="next" href="la-palette-2.html"><div class="dot" style="background: #963e01 "></div><div class="triangle-right"></div></a></li>
+  </ul>
+
+
+ 
+  <div class="footer-start"></div>
+  <footer>
+    <div class="footer-city" onclick="regionsInCity(this)">파리 Ⅰ&nbsp;<span class="footer-latin"></span></div>
+    <h2></h2>
+    <ul class="footer-regions">
+      <li>발 드 마른 &nbsp;<span class="footer-latin">Val-de-Marne</span> &nbsp;<a href="val-de-marne-1.html">1</a> <a href="val-de-marne-2.html">2</a></li>
+      <li>생 제르망 데 프레 &nbsp;<span class="footer-latin">Saint-Germain-des-Prés</span> &nbsp;<a href="la-palette-1.html">1</a> <a href="la-palette-2.html">2</a> <a href="la-palette-3.html">3</a> <a href="la-palette-4.html">4</a></li>
+      <li>몽마르트 &nbsp;<span class="footer-latin">Montmartre</span> &nbsp;<a href="montmartre-1.html">1</a> <a href="montmartre-2.html">2</a> <a href="montmartre-3.html">3</a> <a href="montmartre-4.html">4</a></li>
+      <li>페흐 라쉐즈 &nbsp;<span class="footer-latin">Père Lachaise</span> &nbsp;<a href="pere-la-chaise-1.html">1</a> <a href="pere-la-chaise-2.html">2</a> <a href="pere-la-chaise-3.html">3</a></li>
+    </ul>
+  </footer>
+
+  <div class="overlay" id="overlay-lapalette" onclick="off()">
+    <img class="image-encadre" src="/images/la-palette-enca2.JPG" alt="la palette 1">
+  </div>
+
+  <span id="lat">48.85561452737271</span>
+  <span id="lng">2.336863615846972</span>
+  <span id="clat">48.85737503010722</span>
+  <span id="clng">2.3364777454885304</span>
+  <span id="zoom">15</span>
+  <span id="cS">22</span>
+
+  </div>
+  </div>
+
+  <script src="/js/jquery-3.5.1.min.js"></script>
+  <script type='text/javascript' src='/config.js'></script>
+  <script src="/js/layoutHandler.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+  <script src="/js/app.js"></script>
+
+</body>
+</html>
