@@ -2,14 +2,14 @@ if (screen.width <= 700){
   // document.location= "mobile.html";
   document.getElementById("pagestyle").setAttribute("href", "/mobile.css");
 } else {   
-    if (window.innerWidth < 700 ) {
-      // document.location= "/desktop.html";
+//     if (window.innerWidth < 700 ) {
+      document.location= "/desktop.html";
     //   document.getElementById("pagestyle").setAttribute("href", "/desktop.css");
     //   alert("윈도우 크기를 넓히고 감상해주세요.");
     // }
     // else {
     //   document.getElementById("pagestyle").setAttribute("href", "/desktop.css");
-     }
+//      }
 } 
 
 
