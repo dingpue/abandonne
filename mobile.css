@@ -878,7 +878,6 @@ span.footer-korean {
 /* writing */
 
 .writing-list {
-    font-size: 13.5px;
     height: 84px;
     width: -webkit-calc(100vw - 16px);
     /* background-color: black;   */
@@ -886,15 +885,87 @@ span.footer-korean {
     /* display: flex; */
     /* border-top: 1px solid #9cb29e; */
     text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
 
+.writing-list-kr {
+    height: 84px;
+    width: -webkit-calc(100vw - 16px);
+    /* background-color: black;   */
+    opacity: 100%;
+    /* display: flex; */
+    /* border-top: 1px solid #9cb29e; */
+    text-align: center;
+    font-family: 'Noto Serif KR', serif;
 }
 
 .writing-city {
     margin-top: 10vh;
+    font-size: 13.5px;
+    /* color: #6d7e6e; */
+    margin-bottom: 12px;
+    line-height: 1.5em;
 }
 
 .writings {
     /* display: none; */
+    font-size: 13px;
+    text-align: left;
+    width: 180px;
+    margin: auto;
+    list-style: none;
+    line-height: 1.7em;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.writings a{
+    text-decoration: none;
+    color: black;
+}
+
+.writing-publish-date {
+    /* margin-top: 0.5px; */
+    font-size: 10px;
+    /* color: rgb(99, 99, 99); */
+    font-family: 'Noto Sans JP', sans-serif;
+    float: right;
+}
+
+.line {
+    width: 67px; 
+    text-align: center; 
+    border-top: 0.5px solid #6a8b6ccc; 
+    line-height: 0.1em;
+    margin-top: -5.5px;
+    margin-bottom: 7px;
+    /* top: 0;  */
+    /* display: none; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.writing-close {
+    color: rgb(175, 175, 175);
+}
+
+.writing-close a{
+    color: rgb(175, 175, 175);
+}
+
+.writing-close-kr {
+    color: rgb(209, 209, 209);
+}
+
+.writing-close-kr a{
+    color: rgb(175, 175, 175);
+}
+
+.writing-open-kr {
+    color: rgb(99, 99, 99);
+}
+
+.writing-open-kr a{
+    color: rgb(102, 102, 102);
 }
 
 h4 {
@@ -934,6 +1005,26 @@ h4 {
     line-height: 1.7em;
     /* text-align: justify; */
 
+}
+
+.writing-bullets {
+    /* justify-content: space-between; */
+    /* position: fixed; */
+    justify-content: flex-end;
+    display: flex;
+    /* bottom: 6px; */
+    bottom: 0;
+    padding-right: 10px;
+    font-size: 20px;
+    transition: opacity 0.2s;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    /* opacity: 0; */
+    list-style: none;
+}
+
+.writing-bullets li {
+    margin-left: 2px;
 }
 
 /* kr */
