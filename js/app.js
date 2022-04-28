@@ -270,15 +270,16 @@ var FadeTransition = Barba.BaseTransition.extend({
   fadeIn: function() {
 
     $(window).scrollTop(0);
-
-    this.newContainer.classList.add("slide-in");
+    var that = this;
+    that.done();
+ /*   this.newContainer.classList.add("slide-in");
 
     var that = this;
     
     this.newContainer.addEventListener('animationend', function() {
       that.newContainer.classList.remove('slide-in');
       that.done();
-    });
+    }); */
     /**
      * this.newContainer is the HTMLElement of the new Container
      * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
